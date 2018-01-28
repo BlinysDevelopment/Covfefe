@@ -18,6 +18,10 @@
 		11767A0D201DF70F002D2031 /* DatabasePopulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A0C201DF70E002D2031 /* DatabasePopulator.swift */; };
 		11767A0F201DFCAF002D2031 /* CovfefeAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */; };
 		11767A11201DFF4C002D2031 /* CovfefeAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */; };
+		11767A14201E0CE3002D2031 /* CovfefeAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A13201E0CE3002D2031 /* CovfefeAuthService.swift */; };
+		11767A16201E0F4E002D2031 /* CovfefeUserAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */; };
+		11767A18201E0FB8002D2031 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A17201E0FB8002D2031 /* String+MD5.swift */; };
+		11767A1E201E141F002D2031 /* CovfefeAdminAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */; };
 		11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */; };
 		11D78550201C9EE60045C036 /* CovfefeMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */; };
 		11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */; };
@@ -54,6 +58,11 @@
 		11767A0C201DF70E002D2031 /* DatabasePopulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePopulator.swift; sourceTree = "<group>"; };
 		11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAuthViewController.swift; sourceTree = "<group>"; };
 		11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAuthViewModel.swift; sourceTree = "<group>"; };
+		11767A13201E0CE3002D2031 /* CovfefeAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAuthService.swift; sourceTree = "<group>"; };
+		11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeUserAuthService.swift; sourceTree = "<group>"; };
+		11767A17201E0FB8002D2031 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		11767A19201E1067002D2031 /* Covfefe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Covfefe-Bridging-Header.h"; sourceTree = "<group>"; };
+		11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAdminAuthService.swift; sourceTree = "<group>"; };
 		11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuViewController.swift; sourceTree = "<group>"; };
 		11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemCell.swift; sourceTree = "<group>"; };
 		11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemsCategoryControlCell.swift; sourceTree = "<group>"; };
@@ -113,16 +122,16 @@
 			children = (
 				116542682017D7E600EDE226 /* AppDelegate.swift */,
 				11654288201BCFDE00EDE226 /* UIView+IBInspectable.swift */,
-				11767A0A201DEAD8002D2031 /* CovfefeUser.swift */,
+				11767A17201E0FB8002D2031 /* String+MD5.swift */,
 				11767A0C201DF70E002D2031 /* DatabasePopulator.swift */,
-				11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */,
-				11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */,
+				11767A12201E056E002D2031 /* CovfefeAuth */,
 				11D7855C201CEB330045C036 /* CovfefeMenu */,
 				11D7855B201CCE090045C036 /* Entities */,
 				1165426C2017D7E600EDE226 /* Main.storyboard */,
 				1165426F2017D7E600EDE226 /* Assets.xcassets */,
 				116542712017D7E600EDE226 /* LaunchScreen.storyboard */,
 				116542742017D7E600EDE226 /* Info.plist */,
+				11767A19201E1067002D2031 /* Covfefe-Bridging-Header.h */,
 			);
 			path = Covfefe;
 			sourceTree = "<group>";
@@ -136,9 +145,22 @@
 			path = CovfefeTests;
 			sourceTree = "<group>";
 		};
+		11767A12201E056E002D2031 /* CovfefeAuth */ = {
+			isa = PBXGroup;
+			children = (
+				11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */,
+				11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */,
+				11767A13201E0CE3002D2031 /* CovfefeAuthService.swift */,
+				11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */,
+				11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */,
+			);
+			path = CovfefeAuth;
+			sourceTree = "<group>";
+		};
 		11D7855B201CCE090045C036 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				11767A0A201DEAD8002D2031 /* CovfefeUser.swift */,
 				11D78555201CC4B50045C036 /* CovfefeDrink.swift */,
 				11D78557201CC4C00045C036 /* CovfefeDessert.swift */,
 			);
@@ -233,6 +255,7 @@
 				TargetAttributes = {
 					116542642017D7E600EDE226 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					116542782017D7E600EDE226 = {
@@ -380,13 +403,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */,
+				11767A1E201E141F002D2031 /* CovfefeAdminAuthService.swift in Sources */,
 				11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */,
 				11D78554201CB83E0045C036 /* CovfefeMenuModel.swift in Sources */,
+				11767A18201E0FB8002D2031 /* String+MD5.swift in Sources */,
 				11D78556201CC4B50045C036 /* CovfefeDrink.swift in Sources */,
 				11654289201BCFDE00EDE226 /* UIView+IBInspectable.swift in Sources */,
 				11767A0B201DEAD8002D2031 /* CovfefeUser.swift in Sources */,
+				11767A14201E0CE3002D2031 /* CovfefeAuthService.swift in Sources */,
 				11767A0D201DF70F002D2031 /* DatabasePopulator.swift in Sources */,
 				116542692017D7E600EDE226 /* AppDelegate.swift in Sources */,
+				11767A16201E0F4E002D2031 /* CovfefeUserAuthService.swift in Sources */,
 				11767A11201DFF4C002D2031 /* CovfefeAuthViewModel.swift in Sources */,
 				11D78558201CC4C00045C036 /* CovfefeDessert.swift in Sources */,
 				11767A0F201DFCAF002D2031 /* CovfefeAuthViewController.swift in Sources */,
@@ -545,12 +572,15 @@
 			baseConfigurationReference = 8B013AC18069E9E22D79F558 /* Pods-Covfefe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 898JLBNU25;
 				INFOPLIST_FILE = Covfefe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitamakarov.Covfefe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Covfefe/Covfefe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -561,12 +591,14 @@
 			baseConfigurationReference = 1CF999601405D280F5FF9A2E /* Pods-Covfefe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 898JLBNU25;
 				INFOPLIST_FILE = Covfefe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitamakarov.Covfefe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Covfefe/Covfefe-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

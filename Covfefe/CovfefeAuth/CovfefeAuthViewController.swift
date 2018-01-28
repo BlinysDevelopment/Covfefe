@@ -49,6 +49,9 @@ class CovfefeAuthViewController: FormViewController {
         let loginButtonRow = ButtonRow() { row in
             row.title = "Войти"
         }
+        .onCellSelection { [weak self] _, _ in
+            self?.viewModel?.performLogin()
+        }
         
         let actionSection = Section()
         
