@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1119B75D201BD7550090E718 /* CoffeeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119B75C201BD7550090E718 /* CoffeeListItem.swift */; };
 		116542692017D7E600EDE226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116542682017D7E600EDE226 /* AppDelegate.swift */; };
-		1165426B2017D7E600EDE226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165426A2017D7E600EDE226 /* ViewController.swift */; };
 		1165426E2017D7E600EDE226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1165426C2017D7E600EDE226 /* Main.storyboard */; };
 		116542702017D7E600EDE226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1165426F2017D7E600EDE226 /* Assets.xcassets */; };
 		116542732017D7E600EDE226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116542712017D7E600EDE226 /* LaunchScreen.storyboard */; };
 		1165427E2017D7E600EDE226 /* CovfefeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165427D2017D7E600EDE226 /* CovfefeTests.swift */; };
+		11654289201BCFDE00EDE226 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11654288201BCFDE00EDE226 /* UIView+IBInspectable.swift */; };
+		11767A0B201DEAD8002D2031 /* CovfefeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A0A201DEAD8002D2031 /* CovfefeUser.swift */; };
+		11767A0D201DF70F002D2031 /* DatabasePopulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A0C201DF70E002D2031 /* DatabasePopulator.swift */; };
+		11767A0F201DFCAF002D2031 /* CovfefeAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */; };
+		11767A11201DFF4C002D2031 /* CovfefeAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */; };
+		11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */; };
+		11D78550201C9EE60045C036 /* CovfefeMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */; };
+		11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */; };
+		11D78554201CB83E0045C036 /* CovfefeMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78553201CB83E0045C036 /* CovfefeMenuModel.swift */; };
+		11D78556201CC4B50045C036 /* CovfefeDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78555201CC4B50045C036 /* CovfefeDrink.swift */; };
+		11D78558201CC4C00045C036 /* CovfefeDessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78557201CC4C00045C036 /* CovfefeDessert.swift */; };
 		73803AD6AD181012AFD9D4B2 /* Pods_Covfefe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311881874A8FE2D7681C8EA0 /* Pods_Covfefe.framework */; };
 		A9004E987A27CC44B93BC9A4 /* Pods_CovfefeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C413711BD40BBFD7CD9945B /* Pods_CovfefeTests.framework */; };
 /* End PBXBuildFile section */
@@ -28,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1119B75C201BD7550090E718 /* CoffeeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListItem.swift; sourceTree = "<group>"; };
 		116542652017D7E600EDE226 /* Covfefe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covfefe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116542682017D7E600EDE226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1165426A2017D7E600EDE226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1165426D2017D7E600EDE226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1165426F2017D7E600EDE226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116542722017D7E600EDE226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +49,17 @@
 		116542792017D7E600EDE226 /* CovfefeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovfefeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1165427D2017D7E600EDE226 /* CovfefeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeTests.swift; sourceTree = "<group>"; };
 		1165427F2017D7E600EDE226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11654288201BCFDE00EDE226 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+		11767A0A201DEAD8002D2031 /* CovfefeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeUser.swift; sourceTree = "<group>"; };
+		11767A0C201DF70E002D2031 /* DatabasePopulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePopulator.swift; sourceTree = "<group>"; };
+		11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAuthViewController.swift; sourceTree = "<group>"; };
+		11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAuthViewModel.swift; sourceTree = "<group>"; };
+		11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuViewController.swift; sourceTree = "<group>"; };
+		11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemCell.swift; sourceTree = "<group>"; };
+		11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemsCategoryControlCell.swift; sourceTree = "<group>"; };
+		11D78553201CB83E0045C036 /* CovfefeMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuModel.swift; sourceTree = "<group>"; };
+		11D78555201CC4B50045C036 /* CovfefeDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeDrink.swift; sourceTree = "<group>"; };
+		11D78557201CC4C00045C036 /* CovfefeDessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeDessert.swift; sourceTree = "<group>"; };
 		1CF999601405D280F5FF9A2E /* Pods-Covfefe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covfefe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Covfefe/Pods-Covfefe.release.xcconfig"; sourceTree = "<group>"; };
 		1E5330B1C585C423BD1E8973 /* Pods-CovfefeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovfefeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CovfefeTests/Pods-CovfefeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C413711BD40BBFD7CD9945B /* Pods_CovfefeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovfefeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				116542682017D7E600EDE226 /* AppDelegate.swift */,
-				1165426A2017D7E600EDE226 /* ViewController.swift */,
+				11654288201BCFDE00EDE226 /* UIView+IBInspectable.swift */,
+				11767A0A201DEAD8002D2031 /* CovfefeUser.swift */,
+				11767A0C201DF70E002D2031 /* DatabasePopulator.swift */,
+				11767A0E201DFCAF002D2031 /* CovfefeAuthViewController.swift */,
+				11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */,
+				11D7855C201CEB330045C036 /* CovfefeMenu */,
+				11D7855B201CCE090045C036 /* Entities */,
 				1165426C2017D7E600EDE226 /* Main.storyboard */,
 				1165426F2017D7E600EDE226 /* Assets.xcassets */,
 				116542712017D7E600EDE226 /* LaunchScreen.storyboard */,
@@ -106,6 +134,27 @@
 				1165427F2017D7E600EDE226 /* Info.plist */,
 			);
 			path = CovfefeTests;
+			sourceTree = "<group>";
+		};
+		11D7855B201CCE090045C036 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				11D78555201CC4B50045C036 /* CovfefeDrink.swift */,
+				11D78557201CC4C00045C036 /* CovfefeDessert.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		11D7855C201CEB330045C036 /* CovfefeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1119B75C201BD7550090E718 /* CoffeeListItem.swift */,
+				11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */,
+				11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */,
+				11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */,
+				11D78553201CB83E0045C036 /* CovfefeMenuModel.swift */,
+			);
+			path = CovfefeMenu;
 			sourceTree = "<group>";
 		};
 		6BE8605F79556E62E4503B58 /* Frameworks */ = {
@@ -330,8 +379,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1165426B2017D7E600EDE226 /* ViewController.swift in Sources */,
+				11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */,
+				11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */,
+				11D78554201CB83E0045C036 /* CovfefeMenuModel.swift in Sources */,
+				11D78556201CC4B50045C036 /* CovfefeDrink.swift in Sources */,
+				11654289201BCFDE00EDE226 /* UIView+IBInspectable.swift in Sources */,
+				11767A0B201DEAD8002D2031 /* CovfefeUser.swift in Sources */,
+				11767A0D201DF70F002D2031 /* DatabasePopulator.swift in Sources */,
 				116542692017D7E600EDE226 /* AppDelegate.swift in Sources */,
+				11767A11201DFF4C002D2031 /* CovfefeAuthViewModel.swift in Sources */,
+				11D78558201CC4C00045C036 /* CovfefeDessert.swift in Sources */,
+				11767A0F201DFCAF002D2031 /* CovfefeAuthViewController.swift in Sources */,
+				1119B75D201BD7550090E718 /* CoffeeListItem.swift in Sources */,
+				11D78550201C9EE60045C036 /* CovfefeMenuItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
