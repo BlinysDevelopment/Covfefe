@@ -14,7 +14,13 @@ class CovfefeAuthViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupController()
         buildForm()
+    }
+    
+    private func setupController() {
+        navigationItem.title = "Вход"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     private func buildForm() {
