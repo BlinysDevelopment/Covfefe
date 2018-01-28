@@ -18,7 +18,7 @@ class CovfefeUserAuthService: CovfefeAuthService {
         
         let result: CovfefeAuthResult
         if !users.isEmpty {
-            result = CovfefeAuthResult.success
+            result = CovfefeAuthResult.success(users.first!)
         }
         else {
             result = CovfefeAuthResult.failure(CovfefeAuthError.invalidCredentials)

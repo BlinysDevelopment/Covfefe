@@ -10,12 +10,13 @@ import Eureka
 
 class CovfefeAuthViewController: FormViewController {
 
-    var viewModel: CovfefeAuthViewModel?
+    var viewModel: CovfefeAuthViewModel? = CovfefeAuthViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupController()
         buildForm()
+        viewModel?.view = self
     }
     
     private func setupController() {
@@ -59,5 +60,11 @@ class CovfefeAuthViewController: FormViewController {
         
         form +++ credentialsSection
         form +++ actionSection
+    }
+    
+    func showLoginFailedAlert() {
+        let alert = UIAlertController(title: "Не удалось войти", message: "Неверный логин и/или пароль", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }

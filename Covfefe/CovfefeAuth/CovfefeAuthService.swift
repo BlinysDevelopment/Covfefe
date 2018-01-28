@@ -13,7 +13,7 @@ enum CovfefeAuthError {
 }
 
 enum CovfefeAuthResult {
-    case success
+    case success(CovfefeUser)
     case failure(CovfefeAuthError)
 }
 

@@ -21,7 +21,6 @@
 		11767A14201E0CE3002D2031 /* CovfefeAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A13201E0CE3002D2031 /* CovfefeAuthService.swift */; };
 		11767A16201E0F4E002D2031 /* CovfefeUserAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */; };
 		11767A18201E0FB8002D2031 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A17201E0FB8002D2031 /* String+MD5.swift */; };
-		11767A1E201E141F002D2031 /* CovfefeAdminAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */; };
 		11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */; };
 		11D78550201C9EE60045C036 /* CovfefeMenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */; };
 		11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */; };
@@ -62,7 +61,6 @@
 		11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeUserAuthService.swift; sourceTree = "<group>"; };
 		11767A17201E0FB8002D2031 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		11767A19201E1067002D2031 /* Covfefe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Covfefe-Bridging-Header.h"; sourceTree = "<group>"; };
-		11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeAdminAuthService.swift; sourceTree = "<group>"; };
 		11D7854D201C9CAE0045C036 /* CovfefeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuViewController.swift; sourceTree = "<group>"; };
 		11D7854F201C9EE60045C036 /* CovfefeMenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemCell.swift; sourceTree = "<group>"; };
 		11D78551201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeMenuItemsCategoryControlCell.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				11767A10201DFF4C002D2031 /* CovfefeAuthViewModel.swift */,
 				11767A13201E0CE3002D2031 /* CovfefeAuthService.swift */,
 				11767A15201E0F4E002D2031 /* CovfefeUserAuthService.swift */,
-				11767A1D201E141F002D2031 /* CovfefeAdminAuthService.swift */,
 			);
 			path = CovfefeAuth;
 			sourceTree = "<group>";
@@ -403,7 +400,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D78552201CA0B20045C036 /* CovfefeMenuItemsCategoryControlCell.swift in Sources */,
-				11767A1E201E141F002D2031 /* CovfefeAdminAuthService.swift in Sources */,
 				11D7854E201C9CAE0045C036 /* CovfefeMenuViewController.swift in Sources */,
 				11D78554201CB83E0045C036 /* CovfefeMenuModel.swift in Sources */,
 				11767A18201E0FB8002D2031 /* String+MD5.swift in Sources */,

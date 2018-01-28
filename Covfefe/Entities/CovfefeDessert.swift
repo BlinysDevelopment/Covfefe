@@ -15,7 +15,7 @@ class CovfefeDessert: Object {
     @objc dynamic var name: String = ""
     @objc dynamic var imageData: Data?
     
-    @objc dynamic var availableItems: UInt = 0
+    @objc dynamic var availableItems: Int = 0
     
     override static func primaryKey() -> String? {
         return "id"
